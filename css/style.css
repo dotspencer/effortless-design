@@ -18,7 +18,8 @@ header {
     float: left;
     line-height: 0; }
   header a.logo img {
-    height: 50px; }
+    height: 44px;
+    margin-top: 3px; }
   header nav {
     float: right; }
     header nav a {
