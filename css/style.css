@@ -44,7 +44,7 @@ header {
 
 div.hero {
   height: 500px;
-  background: linear-gradient(158deg, #7335a2, indianred, #f3cf28);
+  background: linear-gradient(158deg, #441369, indianred, #ffe56f);
   padding-top: 90px; }
   div.hero .message {
     float: left;
