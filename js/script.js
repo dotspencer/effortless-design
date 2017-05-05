@@ -1,5 +1,6 @@
 var wind = document.querySelector('.window');
 var first;
+var numReviews = 4;
 var position = 0;
 var marginBottom;
 
@@ -12,19 +13,27 @@ function scrollUp(){
   // Total height of current first div
   var totalHeight = first.clientHeight + marginBottom;
 
-  if(position >= totalHeight){
+  // Check for total hight of half of reviews
+  // since originally I added (numReviews * 2)
+  if(position >= totalHeight * numReviews){
     position = 0;
-    first.outerHTML = "";
-    showReview();
+
+    // Add and remove the same number of reviews
+    var reviews = document.querySelectorAll('.review');
+    for(var i = 0; i < numReviews; i++){
+      reviews[i].outerHTML = "";  // Remove from top
+      showReview();               // Add to bottom
+    }
   }
 
+  // Move every other iteration
   first = document.querySelector('.review');
-  // Use (position += .5)
   if(toggle){
     first.style.marginTop = "-" + (position += 1) + "px";
   }
   toggle = !toggle;
 
+  // Keep animating
   window.requestAnimationFrame(scrollUp);
 }
 
@@ -42,7 +51,6 @@ function showReview(){
   words.appendChild(createDiv('line'));
   words.appendChild(createDiv('line'));
 
-  //review.innerText = ++count;
   review.appendChild(stars);
   review.appendChild(words);
   wind.appendChild(review);
@@ -50,7 +58,7 @@ function showReview(){
 }
 
 function showInitialReviews(){
-	for(var i = 0; i < 8; i++){
+	for(var i = 0; i < numReviews * 2; i++){
   	showReview();
   }
   var s = window.getComputedStyle(first);
