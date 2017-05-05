@@ -40,7 +40,7 @@ function showReview(){
   var words = createDiv('words');
   words.appendChild(createDiv('line'));
   words.appendChild(createDiv('line'));
-  //words.appendChild(createDiv('line'));
+  words.appendChild(createDiv('line'));
 
   //review.innerText = ++count;
   review.appendChild(stars);
