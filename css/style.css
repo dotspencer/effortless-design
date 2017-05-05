@@ -55,8 +55,6 @@ div.hero {
     color: white;
     font-weight: 100;
     letter-spacing: 2px; }
-    div.hero .message .button-bar {
-      width: 78%; }
     div.hero .message a.button {
       font-size: 1rem;
       text-transform: uppercase;
