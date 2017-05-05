@@ -62,3 +62,42 @@ div.hero {
   background: linear-gradient(100deg, #ca4949, #FFCE89);
   padding-top: 65px;
 }
+
+div.content {
+    width: 960px;
+    margin: 0 auto;
+}
+
+/*-=-=-=-=-=-=-
+ Styling for review scroller
+-=-=-=-=-=-=-*/
+div.window {
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  width: 50%;
+  float: right;
+  margin: 30px;
+  height: 300px;
+  overflow: hidden;
+}
+
+div.review {
+  margin: 20px;
+  margin-top: 0;
+  padding: 10px;
+  // background-color: white;
+  background-color: rgba(0, 0, 0, 0.07);
+  border-radius: 5px;
+}
+
+div.stars {
+  font-size: 1.2rem;
+  line-height: 1rem;
+  color: gold;
+  float: left;
+  padding-right: 15px;
+}
+div.words {
+    font-weight: 200;
+    line-height: 1.4rem;
+}
