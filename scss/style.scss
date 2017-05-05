@@ -61,7 +61,7 @@ header {
 div.hero {
   height: 500px;
   // Lighter yellowish: #ffe66e
-  background: linear-gradient(100deg, #ca4949, #FFCE89);
+  background: linear-gradient(158deg, #a23535, indianred, #f3d328);
   padding-top: 90px;
 
   .message {
@@ -75,6 +75,30 @@ div.hero {
 
     span{
       font-weight: 400;
+    }
+    .button-bar {
+      //text-align: right;
+      width: 78%;
+    }
+    a.button {
+      font-size: 1rem;
+      text-transform: uppercase;
+      display: inline-block;
+      text-decoration: none;
+      background-color: white;
+      line-height: normal;
+      font-weight: 500;
+      padding: 10px 12px;
+      border-radius: 6px;
+      color: indianred;
+      margin-top: 35px;
+      box-shadow: 0 1px 7px -2px black;
+      transition: all .15s;
+
+      &:hover{
+        margin-top: 33px;
+        box-shadow: 0 2px 9px -2px rgba(0, 0, 0, 0.68);
+      }
     }
   }
 }
