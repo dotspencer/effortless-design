@@ -52,10 +52,9 @@ div.hero {
     line-height: 4rem;
     width: calc(50% - 60px);
     margin: 50px 30px;
-    color: #333;
-    font-weight: 200; }
-    div.hero .message span {
-      font-weight: 400; }
+    color: white;
+    font-weight: 100;
+    letter-spacing: 2px; }
     div.hero .message .button-bar {
       width: 78%; }
     div.hero .message a.button {
@@ -69,11 +68,12 @@ div.hero {
       padding: 10px 12px;
       border-radius: 6px;
       color: indianred;
-      margin-top: 35px;
+      margin-top: 40px;
       box-shadow: 0 1px 7px -2px black;
+      letter-spacing: normal;
       transition: all .15s; }
       div.hero .message a.button:hover {
-        margin-top: 33px;
+        margin-top: 38px;
         box-shadow: 0 2px 9px -2px rgba(0, 0, 0, 0.68); }
 
 div.content {
